@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @result.keyword %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @result.index %>
+</p>
+
+<p>
+  <strong>Uri:</strong>
+  <%= @result.uri %>
+</p>
+
+<p>
+  <strong>Host:</strong>
+  <%= @result.host %>
+</p>
+
+<p>
+  <strong>Visible uri:</strong>
+  <%= @result.visible_uri %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @result.title %>
+</p>
+
+<p>
+  <strong>Snippet:</strong>
+  <%= @result.snippet %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

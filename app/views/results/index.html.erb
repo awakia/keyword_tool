@@ -1,0 +1,39 @@
+<h1>Listing results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Index</th>
+      <th>Uri</th>
+      <th>Host</th>
+      <th>Visible uri</th>
+      <th>Title</th>
+      <th>Snippet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @results.each do |result| %>
+      <tr>
+        <td><%= result.keyword %></td>
+        <td><%= result.index %></td>
+        <td><%= result.uri %></td>
+        <td><%= result.host %></td>
+        <td><%= result.visible_uri %></td>
+        <td><%= result.title %></td>
+        <td><%= result.snippet %></td>
+        <td><%= link_to 'Show', result %></td>
+        <td><%= link_to 'Edit', edit_result_path(result) %></td>
+        <td><%= link_to 'Destroy', result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Result', new_result_path %>
