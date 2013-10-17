@@ -27,6 +27,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'pry-rails'
+gem 'pry-doc'
+
 gem 'byebug'
 gem 'google-search'
 
