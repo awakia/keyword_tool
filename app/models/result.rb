@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: results
+#
+#  id          :integer          not null, primary key
+#  keyword     :string(255)
+#  index       :integer
+#  uri         :string(255)
+#  host        :string(255)
+#  visible_uri :string(255)
+#  title       :string(255)
+#  snippet     :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 class Result < ActiveRecord::Base
   def uri=(uri)
     self.host = Result.get_host(uri)

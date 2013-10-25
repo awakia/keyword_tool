@@ -56,3 +56,14 @@ KeywordTool::Application.routes.draw do
   #     resources :products
   #   end
 end
+#== Route Map
+# Generated on 25 Oct 2013 17:42
+#
+#     results GET    /results(.:format)          results#index
+#             POST   /results(.:format)          results#create
+#  new_result GET    /results/new(.:format)      results#new
+# edit_result GET    /results/:id/edit(.:format) results#edit
+#      result GET    /results/:id(.:format)      results#show
+#             PATCH  /results/:id(.:format)      results#update
+#             PUT    /results/:id(.:format)      results#update
+#             DELETE /results/:id(.:format)      results#destroy

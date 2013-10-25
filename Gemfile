@@ -33,6 +33,8 @@ gem 'pry-doc'
 gem 'byebug'
 gem 'google-search'
 
+gem 'annotate'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
